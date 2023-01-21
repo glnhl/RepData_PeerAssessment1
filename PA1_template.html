@@ -364,12 +364,13 @@ display: none;
 <code>{r} knitr::opts_chunk$set(echo = FALSE) unzip(&quot;activity.zip&quot;)</code></p>
 <pre class="r"><code>list.files()</code></pre>
 <pre><code>##  [1] &quot;activity.csv&quot;                  &quot;activity.zip&quot;                 
-##  [3] &quot;doc&quot;                           &quot;Figure1.png&quot;                  
-##  [5] &quot;Figure2.png&quot;                   &quot;Figure3.png&quot;                  
-##  [7] &quot;Figure4.png&quot;                   &quot;Figure5.png&quot;                  
-##  [9] &quot;instructions_fig&quot;              &quot;PA1_template.html&quot;            
-## [11] &quot;PA1_template.Rmd&quot;              &quot;README.md&quot;                    
-## [13] &quot;RepData_CourseProject1.Rmd&quot;    &quot;RepData_PeerAssessment1.Rproj&quot;</code></pre>
+##  [3] &quot;doc&quot;                           &quot;figure&quot;                       
+##  [5] &quot;Figure1.png&quot;                   &quot;Figure2.png&quot;                  
+##  [7] &quot;Figure3.png&quot;                   &quot;Figure4.png&quot;                  
+##  [9] &quot;Figure5.png&quot;                   &quot;instructions_fig&quot;             
+## [11] &quot;PA1_template.html&quot;             &quot;PA1_template.md&quot;              
+## [13] &quot;PA1_template.Rmd&quot;              &quot;README.md&quot;                    
+## [15] &quot;RepData_CourseProject1.Rmd&quot;    &quot;RepData_PeerAssessment1.Rproj&quot;</code></pre>
 <pre class="r"><code>data&lt;-read.csv(&quot;activity.csv&quot;)</code></pre>
 <p>Load the dependencies and convert data into tibble</p>
 <pre class="r"><code>suppressMessages(library(tidyr))

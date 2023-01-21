@@ -21,6 +21,7 @@ data<-read.csv("activity.csv")
 
 Load the dependencies and convert data into tibble
 ```{r}
+suppressWarnings(suppressMessages(library(knitr)))
 suppressMessages(library(tidyr))
 suppressWarnings(suppressMessages(library(dplyr)))
 data<-tibble::as_tibble(data)
@@ -160,3 +161,7 @@ with (av5minsteps_byinterval_weekday,plot(interval, fiveminsteps, type="l", main
 ```
 
 The number of steps for the intervals 500-1000 are generally higher in the weekdays. But for the rest of intervals the number of steps are generally higher at the weekend days.
+
+```{r}
+rmarkdown::render("PA1_template.Rmd")
+```
