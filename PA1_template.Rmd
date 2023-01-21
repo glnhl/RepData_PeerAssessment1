@@ -162,6 +162,4 @@ with (av5minsteps_byinterval_weekday,plot(interval, fiveminsteps, type="l", main
 
 The number of steps for the intervals 500-1000 are generally higher in the weekdays. But for the rest of intervals the number of steps are generally higher at the weekend days.
 
-```{r}
-rmarkdown::render("PA1_template.Rmd")
-```
+
